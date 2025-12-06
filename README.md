@@ -101,7 +101,7 @@ git remote add origin https://github.com/adenoch1/DevSecOps-project-1-Foundation
 git push origin main
 
 # In case of any conflict, pull, merg and re-push
-git pull origin main
+git pull origin main --rebase
 
 # correct the conflict and push
 git push origin main.
