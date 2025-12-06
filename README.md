@@ -85,15 +85,26 @@ pytest -q
 
 # Push Code to GitHub (Trigger CI Pipeline)
 
-# 1. Stage all changes
+# 1. Initialize the directory
+git init
+
+# 2. Stage all changes
 git add .
 
-# 2. Commit with a clear message
-git commit -m "Project 1 - Code update"
+# 3. Commit with a clear message
+git commit -m "Initial commit DevSecOps"
 
-# 3. Push to main branch (or master if that is your default)
+# 4. connect local to remote
+git remote add origin https://github.com/adenoch1/DevSecOps-project-1-Foundation.git
+
+# 5. Push to main branch (or master if that is your default)
 git push origin main
 
+# In case of any conflict, pull, merg and re-push
+git pull origin main
+
+# correct the conflict and push
+git push origin main.
 # 4. Open GitHub → Actions tab
 # CI workflow will start automatically
 
